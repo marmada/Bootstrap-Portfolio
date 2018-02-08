@@ -1,0 +1,73 @@
+body{
+    background-image: url(images/OF18OA0.jpg)
+}
+
+.content{
+  background-color: #ffffff; 
+  font-size: 2rem;
+  padding-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+.top{
+    background-color: #ffffff; 
+    border-bottom-color: #cccccc;
+    border-bottom-style: solid;
+    border-bottom-width: 1rem;
+    margin-bottom: 4rem;
+}
+
+.headshot{
+    float:left;
+    margin-right:5px;
+    padding:5px;
+}
+.nav-link{
+    margin:2rem;
+    color:#777777;  
+    font-size: 2rem;
+    -moz-box-align: center;
+}
+
+a:visited {
+    color:#4aaaa5
+}
+
+h1{
+    font-size:6rem;
+    padding:1.5rem;
+    background-color:#4aaaa5;
+    float: left;
+    color:#ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: initial
+    
+}
+
+h2{
+    color:#4aaaa5;
+    padding-bottom: 1.5rem;
+    padding-left:1.5rem;
+    border-bottom-color: #cccccc;
+    border-bottom-style: solid;
+    border-bottom-width:.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    }   
+
+ 
+
+ #footer{
+    background-color: #666666; 
+    border-top-color: #4aaaa5;
+    border-top-style: solid;
+    border-top-width:1rem;
+    margin-top:2rem;
+    padding-top:6rem;
+    padding-bottom:6rem;
+    color: #ffffff;
+    text-align: center;
+   font-size: 3rem;
+    
+}        
