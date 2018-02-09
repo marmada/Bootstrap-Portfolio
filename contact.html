@@ -3,14 +3,11 @@
 <html lang="en-us">
 <meta charset="UTF-8">
 
-<!-- Latest compiled and minified CSS -->
-
 <head>
     <Title>My Portfolio</Title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--Bootstrap Link -->
+    <link rel="stylesheet" href="assets/reset.css" <!--Bootstrap Link -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -19,73 +16,107 @@
         crossorigin="anonymous">
     <!-- Additional styling-->
     <link rel="stylesheet" href="assets/style.css">
-
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
 </head>
 
 <body>
 
-    <!--NavBar-->
 
-    <div class="container-fluid">
-        <nav class="navbar-default">
+    <!--NavBar-->
+    <div class="container-fluid" id="TOP">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div>
                     <div class="navbar-header" id="Title">
-                        <h1>Miriam Armada</h1>
+                        <h1>miRiam aRmada</h1>
                     </div>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-item-active">
-                            <a class="nav-link" href="index.html"> About </a>
-                        </li>
+                    <div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item-active">
+                                <a class="nav-link" href="index.html"> About </a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html"> Portfolio </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html"> Contact Us </a>
-                        </li>
-                    </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html"> Portfolio </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"> Contact uS </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </div>
-    
-    </div>
-    <div class="clearfix" id="bodycontent">
-        <section>
-            <h2 class="subtitle">Contact Me</h2>
-            <br>
-            <div>
+
+    <div class="container" id=mainbox>
+
+        <!--Row 1-->
+        <div class="row">
+            <!--First MAIN Column-->
+            <div class="col-xs-12 col-sm-6 col-md-7 content">
+                <h2>Contact me</h2>
                 <form>
-                    <label>Name</label><br>
-                    <input type="text" name="name"></input><br>
-                    <label>Email</label><br>
-                    <input type="text" name="email"></input><br>
-                    <label>Message</label><br>
-                    <textarea name="message" rows="10" cols="30"></textarea><br>
-                    <input type="submit"></input>
+                    <div class="form-row">
+                        <label>Name</label>
+                        <br>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name"></input>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <label>Email</label>
+                        <br>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email"></input>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <label>Message</label>
+                        <br>
+                        <textarea type="text" class="form-control" id="formGroupExampleInput" name="message" rows="10" cols="20" placeholder="Enter your Message Here"></textarea>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </div>
                 </form>
             </div>
-        </section>
-        <aside>
-            <h2> Connect with Me </h2>
-            <a href="https://github.com/marmada" target="_blank">
-                <img class=socmedia src="assets/images/github2.png" alt="github">
-            </a>
-            <a href="https://www.linkedin.com/in/miriam-armada-blumer-1500b416/" target="_blank">
-                <img class=socmedia src="assets/images/linkedin.png" alt="linkedin">
-            </a>
-            <a href="https://stackexchange.com/users/12722447/marmada" target="_blank">
-                <img class=socmedia src="assets/images/sof.png" alt="Stackoverflow">
-            </a>
-        </aside>
+            <div class="col-md-1 space"></div>
+            <!--Second MAIN Column-->
+            <div class="col-xs-6 col-md-4 content">
+                <h2> Connect with Me </h2>
+                <div class="col-md-4">
+                    <a href="https://github.com/marmada" target="_blank">
+                        <img class="rounded float left" src="assets/images/github2.png" alt="github">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.linkedin.com/in/miriam-armada-blumer-1500b416/" target="_blank">
+                        <img class="rounded float left" src="assets/images/linkedin.png" alt="linkedin">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://stackexchange.com/users/12722447/marmada" target="_blank">
+                        <img class="rounded float left" src="assets/images/sof.png" alt="Stackoverflow">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row space">
+
+        </div>
+
+
     </div>
 
-    <footer class="clearfix">
-        <span>Copyright &copy; 2018 - MVL Productions, a Mila Enterprise</span>
+    <!--Footer-->
+    <div class="container-fluid" id="footer">
+        <nav class="navbar fixed-bottom">
+            <p>Copyright &copy; 2018 - MVL Productions, a Mila Enterprise
+            </p>
+        </nav>
 
-    </footer>
+
+    </div>
 
 
 

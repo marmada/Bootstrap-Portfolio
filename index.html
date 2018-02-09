@@ -3,14 +3,11 @@
 <html lang="en-us">
 <meta charset="UTF-8">
 
-<!-- Latest compiled and minified CSS -->
-
 <head>
     <Title>My Portfolio</Title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/reset.css"
-    <!--Bootstrap Link -->
+    <link rel="stylesheet" href="assets/reset.css" <!--Bootstrap Link -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -25,8 +22,8 @@
 <body>
 
     <!--NavBar-->
-    <div class="container-fluid" class="TOP">
-        <nav class="navbar-default">
+    <div class="container-fluid" id="TOP">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div>
                     <div class="navbar-header" id="Title">
@@ -35,14 +32,14 @@
                     <div>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="nav-item-active">
-                                <a class="nav-link" href="index.html"> aBout </a>
+                                <a class="nav-link" href="index.html"> About </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html"> poRtfolio </a>
+                                <a class="nav-link" href="portfolio.html"> Portfolio </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html"> conTact uS </a>
+                                <a class="nav-link" href="contact.html"> Contact uS </a>
                             </li>
                         </ul>
                     </div>
@@ -53,11 +50,12 @@
 
     <!--Content-->
 
-    <div class="container main">
+    <div class="container" id=mainbox>
 
         <!--Row 1-->
         <div class="row">
-            <div class="col-lg-8 content">
+            <!--First MAIN Column-->
+            <div class="col-xs-12 col-sm-6 col-md-7 content">
                 <h2>About me</h2>
                 <img class="img-responsive headshot" src="assets/images/headshot_2.jpg" alt="me">
                 <p class="headshot"> Born and raised in Mexico, from Spanish ancestry. Courious by Nature, extremely structured for some things
@@ -65,12 +63,13 @@
                     closet..you name it -not great -. You can probably find a hammer in a kitchen drawer and a pan in the
                     garage.)
                 </p>
-                <p>Engineer, Crossfitter, Baker, Chef, Foodie, Pastry Chef, gardener, traveler, DYIer Annonymous, Furmom, MOM
-                    , wife, partner, lover, daughter, sister, friend, Full Stack Developer? (why not? Almost, right?). I
-                    wear many hats everyday and sometimes, many at the same time, to the extend that i probably need a 48hr-day,
+                <p>Engineer, Crossfitter, Baker, Chef, Foodie, Pastry Chef, Gardener, Traveler, DYIer Annonymous, Furmom, MOM
+                    , Wife, Partner, Lover, Daughter, Sister, Friend, Full Stack Developer? (why not? Almost, right?). I
+                    wear many hats everyday and sometimes, many at the same time, to the extend that I probably need a 48hr-day,
                     but I love it and I woudn't imagine my life any other way. </p>
 
                 <h2>My bucket list</h2>
+                <br>
                 <ul>
                     <li>Jump of a Plane</li>
                     <li>Get more ink</li>
@@ -82,33 +81,44 @@
                     <li>Become a Trained Chocolatier</li>
                 </ul>
             </div>
-            
-            <div class="col-md-4 content">
+            <div class="col-md-1 space"></div>
+            <!--Second MAIN Column-->
+            <div class="col-xs-6 col-md-4 content">
                 <h2> Connect with Me </h2>
-                <a href="https://github.com/marmada" target="_blank">
-                    <img class="rounded float left" src="assets/images/github2.png" alt="github">
-                </a>
-                <a href="https://www.linkedin.com/in/miriam-armada-blumer-1500b416/" target="_blank">
-                    <img class="rounded float left" src="assets/images/linkedin.png" alt="linkedin">
-                </a>
-                <a href="https://stackexchange.com/users/12722447/marmada" target="_blank">
-                    <img class="rounded float left" src="assets/images/sof.png" alt="Stackoverflow">
-                </a>
-
+                <div class="col-md-4">
+                    <a href="https://github.com/marmada" target="_blank">
+                        <img class="rounded float left" src="assets/images/github2.png" alt="github">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.linkedin.com/in/miriam-armada-blumer-1500b416/" target="_blank">
+                        <img class="rounded float left" src="assets/images/linkedin.png" alt="linkedin">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://stackexchange.com/users/12722447/marmada" target="_blank">
+                        <img class="rounded float left" src="assets/images/sof.png" alt="Stackoverflow">
+                    </a>
+                </div>
             </div>
+        </div>
+        <div class="row space">
+
         </div>
 
 
     </div>
 
-    <div "class=container-fluid" id="footer">
-        <div class="col-lg-12">Copyright &copy; 2018 - MVL Productions, a Mila Enterprise</div>
+    <!--Footer-->
+    <div class="container-fluid" id="footer">
+        <nav class="navbar fixed-bottom">
+            <p>Copyright &copy; 2018 - MVL Productions, a Mila Enterprise
+            </p>
+        </nav>
+
+
     </div>
 
-
-
-
 </body>
-
 
 </html>
