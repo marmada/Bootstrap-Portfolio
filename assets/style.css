@@ -1,6 +1,19 @@
 body{
-    background-image: url(images/OF18OA0.jpg)
+    background-image: url(images/OF18OA0.jpg);
 }
+
+
+.bottom{
+    
+    border-top-color: #4aaaa5;
+    border-top-style: solid;
+    border-top-width:1rem;
+    color:#777777;
+    text-align: center;
+    font-size: 2rem;
+    height: 85px;
+    
+} 
 
 .content{
   background-color: #ffffff; 
@@ -11,8 +24,8 @@ body{
 
 }
 
-#mainbox{
-    padding-top: 120px;
+.mainbox{
+    padding-top: 80px;
     padding-bottom: 30px;
     
 }
@@ -21,7 +34,7 @@ body{
 
     background-color: transparent;
 }
-#top{
+.top{
     background-color: #ffffff; 
     border-bottom-color: #cccccc;
     border-bottom-style: solid;
@@ -30,9 +43,10 @@ body{
 }
 
 .headshot{
-    float:left;
+
     margin-right:5px;
     padding:5px;
+    float: left;
 }
 .nav-link{
     margin:2rem;
@@ -41,17 +55,17 @@ body{
     -moz-box-align: center;
 }
 a:visited {
-    color:#4aaaa5
+    color:#4aaaa5;
 }
 
-h1{
-    font-size:6rem;
-    padding:1.5rem;
+#logo{
+    font-size:2.5rem;
+    padding:0.5rem;
     background-color:#4aaaa5;
     float: left;
     color:#ffffff;
     font-family: 'Josefin Sans', sans-serif;
-    text-transform: initial
+    text-transform: initial;
     
 }
 
@@ -78,21 +92,7 @@ form{
     width: 80%;
     padding-left: 10%;
 } 
-
- #footer{
-    position: absolute;
-    bottom: 0;
-    min-width: 100%;
-    background-color: #666666; 
-    border-top-color: #4aaaa5;
-    border-top-style: solid;
-    border-top-width:1rem;
-    color: #ffffff;
-    text-align: center;
-    font-size: 2rem;
-    height: 85px;
-    
-}        
+       
  .gallery{
      margin-bottom: 15px;
 

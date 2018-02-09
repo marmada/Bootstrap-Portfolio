@@ -22,27 +22,28 @@
 <body>
 
     <!--NavBar-->
-    <div class="container-fluid" id="TOP">
+    <div class="container-fluid TOP">
         <nav class="navbar navbar-default navbar-fixed-top">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="container">
-                <div>
-                    <div class="navbar-header" id="Title">
-                        <h1>miRiam aRmada</h1>
-                    </div>
-                    <div>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="nav-item-active">
-                                <a class="nav-link" href="index.html"> About </a>
-                            </li>
+                <div class="navbar-header">
+                    <h1 class="navbar-brand" id="logo">miRiam aRmada</h1> 
+                </div>
+                <!-- Collection of nav links and other content for toggling -->
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item-active collapse navbar-collapse">
+                            <a class="nav-link" href="index.html"> About </a>
+                        </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html"> Portfolio </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html"> Contact uS </a>
-                            </li>
-                        </ul>
-                    </div>
+                        <li class="nav-item collapse navbar-collapse">
+                            <a class="nav-link" href="portfolio.html"> Portfolio </a>
+                        </li>
+
+                        <li class="nav-item collapse navbar-collapse">
+                            <a class="nav-link" href="contact.html"> Contact me </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -50,36 +51,41 @@
 
     <!--Content-->
 
-    <div class="container" id=mainbox>
+    <div class="container mainbox">
 
         <!--Row 1-->
         <div class="row">
             <!--First MAIN Column-->
             <div class="col-xs-12 col-sm-6 col-md-7 content">
-                <h2>About me</h2>
-                <img class="img-responsive headshot" src="assets/images/headshot_2.jpg" alt="me">
-                <p class="headshot"> Born and raised in Mexico, from Spanish ancestry. Courious by Nature, extremely structured for some things
-                    (such finances and processes) but also extremely desorganized on other trivial matters (kitchen, house,
-                    closet..you name it -not great -. You can probably find a hammer in a kitchen drawer and a pan in the
-                    garage.)
-                </p>
-                <p>Engineer, Crossfitter, Baker, Chef, Foodie, Pastry Chef, Gardener, Traveler, DYIer Annonymous, Furmom, MOM
-                    , Wife, Partner, Lover, Daughter, Sister, Friend, Full Stack Developer? (why not? Almost, right?). I
-                    wear many hats everyday and sometimes, many at the same time, to the extend that I probably need a 48hr-day,
-                    but I love it and I woudn't imagine my life any other way. </p>
-
-                <h2>My bucket list</h2>
-                <br>
-                <ul>
-                    <li>Jump of a Plane</li>
-                    <li>Get more ink</li>
-                    <li>Hike Rim to Rim the Grand Canyon</li>
-                    <li>A Muscle up and 25 DU (Any Fitness Afitionado/Crossfitter will get this one)</li>
-                    <li>Take a one-year Sabatical with my family and travel around the world</li>
-                    <li>Learn to Paddle Board</li>
-                    <li>Travel to every single Continent</li>
-                    <li>Become a Trained Chocolatier</li>
-                </ul>
+                <div class="row"><h2>About me</h2></div>
+                <div class="row">
+                    <img class="headshot" src="assets/images/headshot_2.jpg" alt="me">
+                    <p class="headshot"> Born and raised in Mexico, from Spanish ancestry. Courious by Nature, extremely structured for some things
+                        (such finances and processes) but also extremely desorganized on other trivial matters (kitchen,
+                        house, closet..you name it -not great -. You can probably find a hammer in a kitchen drawer and a
+                        pan in the garage.)
+                    </p>
+                </div>
+                <div class="row">
+                    <p>Engineer, Crossfitter, Baker, Chef, Foodie, Pastry Chef, Gardener, Traveler, DYIer Annonymous, Furmom,
+                        MOM , Wife, Partner, Lover, Daughter, Sister, Friend, Full Stack Developer? (why not? Almost, right?).
+                        I wear many hats everyday and sometimes, many at the same time, to the extend that I probably need
+                        a 48hr-day, but I love it and I woudn't imagine my life any other way. </p>
+                </div>
+                <div class="row">
+                    <h2>My bucket list</h2>
+                    <br>
+                    <ul>
+                        <li>Jump of a Plane</li>
+                        <li>Get more ink</li>
+                        <li>Hike Rim to Rim the Grand Canyon</li>
+                        <li>A Muscle up and 25 DU (Any Fitness Afitionado/Crossfitter will get this one)</li>
+                        <li>Take a one-year Sabatical with my family and travel around the world</li>
+                        <li>Learn to Paddle Board</li>
+                        <li>Travel to every single Continent</li>
+                        <li>Become a Trained Chocolatier</li>
+                    </ul>
+                </div>
             </div>
             <div class="col-md-1 space"></div>
             <!--Second MAIN Column-->
@@ -102,16 +108,16 @@
                 </div>
             </div>
         </div>
-        <div class="row space">
-
-        </div>
 
 
     </div>
 
-    <!--Footer-->
-    <div class="container-fluid" id="footer">
-        <nav class="navbar fixed-bottom">
+
+
+
+   <!--Footer-->
+   <div class="container-fluid bottom">
+        <nav class="navbar navbar-default navbar-fixed-bottom bottom">
             <p>Copyright &copy; 2018 - MVL Productions, a Mila Enterprise
             </p>
         </nav>
